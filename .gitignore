@@ -1,0 +1,7 @@
+work_dirs
+jfj/
+data
+__pycache__/
+.vscode/
+.dist_test/
+weights/
