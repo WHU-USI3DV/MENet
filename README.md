@@ -1,6 +1,8 @@
 # MENet
 :triangular_flag_on_post:	The whole codebase is comming soon. 
 
+[![demo_nus](imgs/demo_nus.png)](https://youtu.be/YEzCHtUVj8M)
+
 ## Performance
 
 |                      Method                       | Modality |  mAP  |  NDS  |                                                Weights                                                 |
