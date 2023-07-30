@@ -1,10 +1,14 @@
 # MENet 
-
-:triangular_flag_on_post:	The whole codebase is coming soon. 
-
-:triangular_flag_on_post: MENet++ is on the road.
+This is the official code for the paper [《MENet: Map-enhanced 3D object detection in bird’s-eye view for LiDAR point clouds》](https://www.sciencedirect.com/science/article/pii/S1569843223001590).
 
 [![demo_nus](imgs/demo_nus.gif)](https://youtu.be/YEzCHtUVj8M "Click to youtube")
+
+## News
+- **2023.05.19**: [《MENet: Map-enhanced 3D object detection in bird’s-eye view for LiDAR point clouds》](https://www.sciencedirect.com/science/article/pii/S1569843223001590) is published on JAG.
+
+## TODO
+- [ ] :triangular_flag_on_post: MENet++ is on the road. The whole codebase will be published, once MENet++ is published. 
+
 
 ## Performance
 
