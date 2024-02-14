@@ -8,6 +8,24 @@ This is the official code for the paper [《MENet: Map-enhanced 3D object detect
 - **2023.05.19**: [《MENet: Map-enhanced 3D object detection in bird’s-eye view for LiDAR point clouds》](https://www.sciencedirect.com/science/article/pii/S1569843223001590) is published on JAG.
 
 
+## Catalogue
+- [MENet](#menet)
+  - [News](#news)
+  - [Catalogue](#catalogue)
+  - [Performance](#performance)
+  - [Installation](#installation)
+    - [Tested Environment](#tested-environment)
+    - [Steps](#steps)
+  - [Dataset Preparation](#dataset-preparation)
+  - [Train](#train)
+    - [Train on multiple GPUs](#train-on-multiple-gpus)
+    - [Train on single GPU](#train-on-single-gpu)
+  - [Evaluate](#evaluate)
+    - [Evaluate on multiple GPUs](#evaluate-on-multiple-gpus)
+    - [Evaluate on single GPU](#evaluate-on-single-gpu)
+  - [Related Projects](#related-projects)
+
+
 ## Performance
 
 Performance without CBGS:
@@ -26,7 +44,6 @@ Performance with CBGS:
 |    SECOND  |    L     | 47.6  | 59.2  | TODO |
 | ME SECOND |   L+M    | 50.9  | 61.4  | TODO |
 
----
 
 ## Installation
 
@@ -45,12 +62,10 @@ Performance with CBGS:
 python setup.py develop
 ```
 
----
 
 ## Dataset Preparation
 You can download, organize and prepare the dataset according to the documentory of *mmdetection3d*([nuScenes](https://mmdetection3d.readthedocs.io/en/latest/user_guides/dataset_prepare.html#nuscenes) | [Lyft](https://mmdetection3d.readthedocs.io/en/latest/user_guides/dataset_prepare.html#lyft)).
 
----
 
 ## Train
 ### Train on multiple GPUs
@@ -66,7 +81,7 @@ export WORK_DIR="./work_dirs/menet" # the output directory
 ```bash
 python tools/train.py ${CONFIG_FILE} --work-dir ${WORK_DIR} --deterministic
 ```
----
+
 ## Evaluate
 ### Evaluate on multiple GPUs
 ```bash
@@ -84,7 +99,7 @@ export RESULT_FILE=./work_dirs/menet/results.pkl
 ```bash
 python tools/test.py ${CONFIG_FILE}  ${CHECKPOINT_FILE} --eval ${EVAL_METRICS}
 ```
----
+
 ## Related Projects
 - [mmdetection](https://github.com/open-mmlab/mmdetection3d)
 - [BEVFusion](https://github.com/mit-han-lab/bevfusion)
